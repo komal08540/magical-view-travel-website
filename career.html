@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career - Magical View Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body  class="career-page">
+    <nav class="nav">
+  <div class="container">
+
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Magical View Travel Logo">
+    
+    </a>
+
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+
+      <div class="dropdown">
+        <a href="index.html#travel-types">Travel Types ▾</a>
+
+        <div class="dropdown-menu">
+          <a href="index.html#honeymoon">Honeymoon</a>
+          <a href="index.html#family">Family Vacation</a>
+          <a href="index.html#cultural">Cultural Tours</a>
+          <a href="index.html#adventure">Adventure Tours</a>
+        </div>
+      </div>
+
+      <a href="career.html" class="active">Career</a>
+
+      <a href="contact.html">Contact</a>
+
+      <a class="btn btn-primary" href="contact.html#booking">
+        Book Now
+      </a>
+    </div>
+
+  </div>
+</nav>
+  
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Join Our Team</h2>
+                <p>Build your career with Magical View Travel Agent Ltd.</p>
+            </div>
+            <div class="career-grid">
+
+    <a href="apply.html?job=Travel Consultant" class="career-card">
+        
+        <h3>Travel Consultant</h3>
+        <p>Assist customers with flight, hotel and visa bookings.</p>
+    </a>
+
+    <a href="apply.html?job=Sales Executive" class="career-card">
+        <h3>Sales Executive</h3>
+        <p>Promote travel packages and generate new business.</p>
+    </a>
+
+    <a href="apply.html?job=Customer Support" class="career-card">
+        <h3>Customer Support</h3>
+        <p>Provide excellent assistance before and after travel.</p>
+    </a>
+
+</div>
+<div class="apply-animation">
+
+        <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json"
+            background="transparent"
+            speed="1"
+            style="width:400px;height:400px;"
+            loop
+            autoplay>
+        </lottie-player>
+
+    </div>
+
+    <div class="apply-card">
+
+        <h1>Join Magical View Travel</h1>
+        <p>Start your journey with our growing travel team.</p>
+
+            <div class="card" style="max-width:800px;margin:auto;">
+                <form class="form">
+
+                    <div class="form-row">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="tel" placeholder="Phone Number" required>
+                        <input type="text" placeholder="Position Applying For" required>
+                    </div>
+
+                    <input type="text" placeholder="Current Location">
+
+                    <label>Upload Resume</label>
+                    <input type="file" accept=".pdf,.doc,.docx">
+
+                    <textarea placeholder="Tell us about yourself"></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        Submit Application
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <div class="whatsapp">
+    <a href="#" class="whatsapp-btn" id="waBtn" aria-label="WhatsApp">💬</a>
+    <div class="wa-menu" id="waMenu">
+      <h4>Chat on WhatsApp</h4>
+      <a class="wa-link" href="https://wa.me/256755643257" target="_blank" rel="noopener">
+        Uganda Office 1
+        <small>+256 755643257</small>
+      </a>
+      <a class="wa-link" href="https://wa.me/256741375925" target="_blank" rel="noopener">
+        Uganda Office 2
+        <small>+256 741375925</small>
+      </a>
+      <a class="wa-link" href="https://wa.me/919216089403" target="_blank" rel="noopener">
+        India Office
+        <small>+91 9216089403</small>
+      </a>
+      <a class="wa-link" href="https://wa.me/+91 9216089402" target="_blank">
+  India Office 2
+  <small>+91 9216089402</small>
+</a>
+    </div>
+  </div>
+
+  <script>
+
+    const cards = document.querySelectorAll('.destination-card');
+
+    const observer = new IntersectionObserver((entries) => {
+
+      entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+
+      });
+
+    }, {
+      threshold: 0.2
+    });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+
+  </script>
+
+    <footer class="footer-modern">
+
+        <div class="container footer-grid">
+
+            <!-- Company Info -->
+            <div class="footer-company">
+
+                <img src="assets/logo.png" alt="Magical View Travel Logo">
+
+                <p>
+                    Your trusted global travel partner providing flight booking,
+                    visa assistance, hotel reservations and customized tour packages.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#" id="footerWhatsapp" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="mailto:magicalview4@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                </div>
+
+                <!-- WhatsApp Popup -->
+                <div class="footer-wa-menu" id="footerWaMenu">
+
+                    <a href="https://wa.me/256755643257" target="_blank">
+                        Uganda Office 1
+                        <small>+256 755643257</small>
+                    </a>
+
+                    <a href="https://wa.me/256741375925" target="_blank">
+                        Uganda Office 2
+                        <small>+256 741375925</small>
+                    </a>
+
+                    <a href="https://wa.me/919216089403" target="_blank">
+                        India Office 1
+                        <small>+91 9216089403</small>
+                    </a>
+
+                    <a href="https://wa.me/+91 9216089402" target="_blank">
+                        India Office 2
+                        <small>+91 9216089402</small>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Uganda Office -->
+            <div class="office-box">
+
+                <h3><i class="fas fa-map-marker-alt"></i> Uganda Office</h3>
+
+                <p>
+                    Cham Tower Mall<br>
+                    Office Number 175, 1st Floor<br>
+                    Jinja Road, Kampala, Uganda
+                </p>
+
+                <p>
+                    <i class="fas fa-phone"></i> +256 755643257<br>
+                    <i class="fas fa-phone"></i> +256 741375925
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    kampalamagicalview2025@gmail.com
+                </p>
+
+            </div>
+
+            <!-- India Office -->
+            <div class="office-box">
+
+                <h3><i class="fas fa-map-marker-alt"></i> India Office</h3>
+
+                <p>
+                    Chorsiawas Road,<br>
+                    Janta Colony, Vaishali Nagar,<br>
+                    Ajmer, Rajasthan 305004, India
+                </p>
+
+                <p>
+                    <i class="fas fa-phone"></i> +91 9216089403<br>
+                    <i class="fas fa-phone"></i>+91 9216089402
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    magicalviewtravel2025@outloom.com
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-copy">
+            © 2026 Magical View Travel Agent Ltd. All Rights Reserved.
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+</body>
+
+</html>

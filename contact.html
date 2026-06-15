@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact &amp; Booking - Magical View Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="contact-page"">
+
+  <nav class="nav">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Magical View Travel Logo">
+       
+      </a>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+            <div class="dropdown">
+           <a href="index.html#travel-types">Travel Types ▾</a>
+
+          <div class="dropdown-menu">
+            <a href="#honeymoon">Honeymoon</a>
+            <a href="#family">Family Vacation</a>
+            <a href="#cultural">Cultural Tours</a>
+            <a href="#adventure">Adventure Tours</a>
+          </div>
+        </div>
+
+        <a href="career.html">Career</a>
+        <a href="contact.html">Contact</a>
+
+        <a class="btn btn-primary" href="contact.html#booking">Book Now</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="section" style="padding-top:54px">
+    <div class="container">
+      <div class="section-title">
+        <h2>Book With Us</h2>
+        <p>Tell us your travel plan and we&apos;ll get back to you.</p>
+      </div>
+
+      <div class="card booking-card">
+        <form class="form" action="#" method="post">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+          </div>
+          <div class="form-row">
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="text" name="departure" placeholder="Departure City">
+          </div>
+          <div class="form-row">
+            <input type="text" name="destination" placeholder="Destination">
+            <input type="date" name="travel_date">
+          </div>
+          <div class="form-row">
+            <select name="service">
+              <option>Choose Service</option>
+              <option>Flight Booking</option>
+              <option>Hotel Booking</option>
+              <option>Visa Assistance</option>
+              <option>Custom Tour Package</option>
+              <option>Group / Corporate Travel</option>
+            </select>
+            <input type="number" name="travellers" min="1" placeholder="Number of Travelers">
+          </div>
+          <textarea name="details" placeholder="Tell us your travel plan, budget, or preferences"></textarea>
+          <button class="btn btn-primary" type="submit">Submit Booking Request</button>
+        </form>
+      </div>
+
+      <div class="section-title" style="margin-top:46px">
+        <h2>Customer Query</h2>
+        <p>Have a question about visas, flights, hotels, or packages? Ask us here.</p>
+      </div>
+
+      <div class="card booking-card" id="query">
+        <form class="form" action="#" method="post">
+          <div class="form-row">
+            <input type="text" name="qname" placeholder="Your Name" required>
+            <input type="email" name="qemail" placeholder="Email Address" required>
+          </div>
+          <input type="text" name="subject" placeholder="Subject (Visa, Flight, Hotel, Package, etc.)">
+          <textarea name="message" placeholder="Write your question here..." required></textarea>
+          <button class="btn btn-secondary" type="submit">Send Query</button>
+        </form>
+      </div>
+
+      <div class="section-title" style="margin-top:46px">
+        <h2>Contact Information</h2>
+        <p>Reach us directly through our Uganda and India offices.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card contact-card">
+          <h3>Uganda Office</h3>
+          <p><strong>Phone:</strong> +256 755643257</p>
+          <p><strong>Phone:</strong> +256 741375925</p>
+          <p><strong>Email:</strong> kampalamagicalview2025@gmail.com</p>
+          <p><strong>Address:</strong> Cham Tower Mall, Office 175, 1st Floor, Jinja Road, Kampala</p>
+        </div>
+       <div class="card contact-card">
+          <h3>India Office</h3>
+
+          <p><strong>Phone:</strong> +91 9216089403</p>
+          <p><strong>Phone:</strong> +91 9216089402</p>
+
+          <p><strong>Email:</strong> magicalview4@gmail.com</p>
+
+          <p>
+            <strong>Address:</strong><br>
+            Chorsiawas Road,<br>
+            Janta Colony, Vaishali Nagar,<br>
+            Ajmer, Rajasthan 305004
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:22px">
+        <div class="card">
+          <h3>Uganda Map</h3>
+          <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Cham+Tower+Mall+Kampala&amp;output=embed"></iframe>
+        </div>
+        <div class="card">
+          <h3>India Map</h3>
+          <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Vaishali+Nagar+Ajmer&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="whatsapp">
+    <a href="#" class="whatsapp-btn" id="waBtn" aria-label="WhatsApp">💬</a>
+    <div class="wa-menu" id="waMenu">
+      <h4>Chat on WhatsApp</h4>
+      <a class="wa-link" href="https://wa.me/256755643257" target="_blank" rel="noopener">
+        Uganda Office 1
+        <small>+256 755643257</small>
+      </a>
+      <a class="wa-link" href="https://wa.me/256741375925" target="_blank" rel="noopener">
+        Uganda Office 2
+        <small>+256 741375925</small>
+      </a>
+      <a class="wa-link" href="https://wa.me/919216089403" target="_blank" rel="noopener">
+        India Office
+        <small>+91 9216089403</small>
+      </a>
+      <a class="wa-link" href="https://wa.me/+91 9216089402" target="_blank">
+  India Office 2
+  <small>+91 9216089402</small>
+</a>
+    </div>
+  </div>
+
+  <footer class="footer-modern">
+
+  <div class="container footer-grid">
+
+    <!-- Company Info -->
+    <div class="footer-company">
+
+      <img src="assets/logo.png" alt="Magical View Travel Logo">
+
+      <p>
+        Your trusted global travel partner providing flight booking,
+        visa assistance, hotel reservations and customized tour packages.
+      </p>
+
+     <div class="social-icons">
+
+  <a href="https://wa.me/256755643257" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="mailto:magicalview4@gmail.com">
+    <i class="fas fa-envelope"></i>
+  </a>
+
+</div>
+      <!-- WhatsApp Popup -->
+      <div class="footer-wa-menu" id="footerWaMenu">
+
+        <a href="https://wa.me/256755643257" target="_blank">
+          Uganda Office 1
+          <small>+256 755643257</small>
+        </a>
+
+        <a href="https://wa.me/256741375925" target="_blank">
+          Uganda Office 2
+          <small>+256 741375925</small>
+        </a>
+
+        <a href="https://wa.me/919216089403" target="_blank">
+          India Office 1
+          <small>+91 9216089403</small>
+        </a>
+
+        <a href="https://wa.me/+91 9216089402" target="_blank">
+          India Office 2
+          <small>+91 9216089402</small>
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Uganda Office -->
+    <div class="office-box">
+
+      <h3><i class="fas fa-map-marker-alt"></i> Uganda Office</h3>
+
+      <p>
+        Cham Tower Mall<br>
+        Office Number 175, 1st Floor<br>
+        Jinja Road, Kampala, Uganda
+      </p>
+
+      <p>
+        <i class="fas fa-phone"></i> +256 755643257<br>
+        <i class="fas fa-phone"></i> +256 741375925
+      </p>
+
+      <p>
+        <i class="fas fa-envelope"></i>
+        kampalamagicalview2025@gmail.com
+      </p>
+
+    </div>
+
+    <!-- India Office -->
+    <div class="office-box">
+
+      <h3><i class="fas fa-map-marker-alt"></i> India Office</h3>
+
+      <p>
+        Chorsiawas Road,<br>
+        Janta Colony, Vaishali Nagar,<br>
+        Ajmer, Rajasthan 305004, India
+      </p>
+
+      <p>
+        <i class="fas fa-phone"></i> +91 9216089403<br>
+        <i class="fas fa-phone"></i> +91 9216089402
+      </p>
+
+      <p>
+        <i class="fas fa-envelope"></i>
+        magicalviewtravel2025@outloom.com
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="footer-copy">
+    © 2026 Magical View Travel Agent Ltd. All Rights Reserved.
+  </div>
+
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
